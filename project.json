@@ -1,0 +1,26 @@
+{
+  "overview": "A modern, dark-themed personal portfolio website for Soumalya Hajra — a QA Engineer transitioning into SDET roles. Features animated skill bars, GitHub project integration, recruiter-focused impact metrics, and a polished dark/light mode interface.",
+  "features": [
+    "Dark/light mode with theme persistence",
+    "Animated skill progress bars",
+    "GitHub API integration for projects",
+    "Sticky navbar with section highlighting",
+    "Smooth scroll animations (fade-in, slide-up)",
+    "Contact form with email display",
+    "Blog section with placeholder posts",
+    "Resume download button",
+    "Responsive mobile-first layout",
+    "Soft glow effects on interactive elements"
+  ],
+  "category": "portfolio",
+  "tags": [
+    "portfolio",
+    "qa-engineer",
+    "sdet",
+    "automation",
+    "dark-theme",
+    "react",
+    "animated"
+  ],
+  "last_updated": "2026-04-16T15:37:49.081Z"
+}

@@ -1,0 +1,47 @@
+type SubmitResult = 
+ variant {
+   err: text;
+   ok: nat;
+ };
+type ProfileImage = 
+ record {
+   key: text;
+   updatedAt: int;
+   url: text;
+ };
+type CreateBlogResult = 
+ variant {
+   err: text;
+   ok: BlogPost;
+ };
+type ContactMessage = 
+ record {
+   email: text;
+   id: nat;
+   message: text;
+   name: text;
+   timestamp: int;
+ };
+type BlogPost = 
+ record {
+   category: text;
+   content: text;
+   excerpt: text;
+   id: nat;
+   isPublished: bool;
+   publishedAt: int;
+   readTime: text;
+   tags: vec text;
+   title: text;
+ };
+service : {
+  createBlog: (title: text, excerpt: text, content: text, category: text,
+   tags: vec text, readTime: text) -> (CreateBlogResult);
+  deleteBlog: (id: nat) -> (bool);
+  getBlog: (id: nat) -> (opt BlogPost) query;
+  getBlogs: () -> (vec BlogPost) query;
+  getContacts: () -> (vec ContactMessage) query;
+  getProfileImage: () -> (opt ProfileImage) query;
+  setProfileImage: (key: text, url: text) -> (ProfileImage);
+  submitContact: (name: text, email: text, message: text) -> (SubmitResult);
+}

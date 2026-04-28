@@ -1,0 +1,33 @@
+// Version: 1.0.0
+type BlogPost__72627970 =
+  {
+    category : Text;
+    content : Text;
+    excerpt : Text;
+    id : Nat;
+    isPublished : Bool;
+    publishedAt : Int;
+    readTime : Text;
+    tags : [Text];
+    title : Text
+  };
+type ContactMessage__84138439 =
+  {email : Text; id : Nat; message : Text; name : Text; timestamp : Int};
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+type ProfileImage__1048299082 = {key : Text; updatedAt : Int; url : Text};
+actor {
+  stable blogPosts :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?BlogPost__72627970]];
+      var elementIndex : Nat__490723111
+    };
+  stable contactMessages :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?ContactMessage__84138439]];
+      var elementIndex : Nat__490723111
+    };
+  stable profileState : [var ?ProfileImage__1048299082]
+};
