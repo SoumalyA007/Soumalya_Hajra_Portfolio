@@ -70,7 +70,7 @@ export function Navbar({ activeSection, setActiveSection }: NavbarProps) {
               <ShieldCheck className="w-4 h-4 text-accent" />
             </span>
             <span className="text-foreground">
-              S<span className="text-accent">H</span>
+              Soumalya<span className="text-accent"> Hajra</span>
             </span>
           </button>
 

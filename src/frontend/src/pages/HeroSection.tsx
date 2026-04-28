@@ -129,7 +129,7 @@ export default function HeroSection() {
             className="font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4 slide-up"
             style={{ animationDelay: "0.1s" }}
           >
-            <span className="text-foreground">QA Engineer Building </span>
+            <span className="text-foreground">Software Test Engineer Building </span>
             <span className="text-gradient">Scalable Automation</span>
             <span className="text-foreground"> &amp; Reliable Systems</span>
           </h1>

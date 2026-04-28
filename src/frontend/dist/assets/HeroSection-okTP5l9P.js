@@ -130,7 +130,7 @@ function HeroSection() {
                 className: "font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-4 slide-up",
                 style: { animationDelay: "0.1s" },
                 children: [
-                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground", children: "QA Engineer Building " }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground", children: "Software Tester Engineer Building " }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-gradient", children: "Scalable Automation" }),
                   /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-foreground", children: " & Reliable Systems" })
                 ]
